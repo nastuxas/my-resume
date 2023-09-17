@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+    font-weight: 900;
+  }
+
+.container {
+max-width: 1000px;
+width: 100%;
+margin: auto;
+}
+
+.navbar {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    color: #000;
+    text-shadow: 0px 2px 4px #BF7506;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #BF7506;
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.header-photo {
+    max-width: 360px;
+    border-radius: 20px;  
+}
+
+.header-text {
+    padding-left:27px;
+}
+
+.header-strong {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 125%
+}
+
+.header-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: -0.48px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.header-primary {
+    color: #BF7506;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.social-link {
+    padding: 8px;
+    display: inline-block;
+}
+
+.cv-download { 
+    display: flex;
+    align-items: center;
+    padding: 7px 8px;
+    text-decoration: none;
+    border-bottom: 2px solid #BF7506;
+}
+
+.cv-text {
+color: #211B12;
+font-size: 16px;
+font-weight: 700;
+line-height: 150%;
+margin-left: 4px;
+}
+
+.main__scroll {
+    display:block;
+    margin:0 auto;
+    background-image:url("../images/scrolll.svg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:40px;
+    height:60px
+}
+
+.section-heading { 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 125%;
+    color: #BF7506;
+    text-align: center
+}
+
+.card {
+    max-width: 400px;
+    margin-bottom: 40px;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    object-fit: cover;
+    width: 100%;
+    height:300px;
+}
+
+.card-text-wrapper { 
+    padding:16px;
+}
+
+.card-title { 
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 135%;
+    color: #BF7506;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.tags { 
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.tags-item {
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--brand-500, #DD9C3C);
+    background: #FFF;
+}
+
+.tag { 
+    margin: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--brand-500, #DD9C3C);
+    background: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #211B12;
+}
+
+.cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.card-text { 
+    font-size: 16px;
+    color: #211B12;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 17px;    
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    background-color: #bc75181d;
+}
+
+.frog {
+    width: 400px;
+    height: 250px;
+}
+
+.aboutme-text {
+    padding-left: 130px;
+    font-size: 16px;
+    color: #211B12;
+    font-weight: 400;
+    line-height: 150%;
+    text-indent: 20px;  
+}
+
+.aboutme-text i {
+    text-indent: 20px;
+}
+
+#more {
+    display: none;
+}
+
+.btn-more {
+    padding: 16px 42px;
+    border-radius: 3px;
+    border: 2px solid #DD9C3C;
+    background-color: white;
+}
+
+.btn-more:hover {
+    background-color: #DD9C3C; 
+    color: white;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.contacts-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 125%;
+    color: #BF7506;
+    text-align: center;
+}
+
+.contacts-list {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contacts-item{
+    border-bottom: 2px solid #BF7506;
+    padding: 7px 8px;
+}
+
+.contacts-link {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contacts-logo {
+    height: 30px;
+    margin-right: 15px;
+}
+
+@media (max-width:1024px) {
+    .container {
+        max-width: 760px;
+    }
+
+    .card {
+     max-width: 350px;
+    }
+}
+
+@media (max-width:790px) {
+    .container {
+        max-width: 576px;
+    }
+    .header-photo {
+        max-width: 238px;
+    }
+    .social-list {
+        margin-right: 10px;
+    }
+    .social-link {
+        padding: 3px;
+    }
+    .header-strong{
+        font-size: 36px;
+    }
+
+    .header-heading {
+        font-size: 18px;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .aboutme-text {
+        margin:auto;
+        padding: 0;
+    }
+   
+}
+
+@media (max-width:700px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar-logo {
+        font-size: 24px;
+    }
+
+    .header-photo {
+        max-width: 250px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+    .aboutme-text {
+        padding: 10px 50px;
+    }
+    .btn-more {
+        padding: 10px 30px;
+    }
+    .contacts-list {
+        flex-direction: column;
+    }
+}
+@media (max-width:545px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-photo {
+        max-width: 60%;
+    }
+
+}
+
+@media (max-width:500px){
+    .navbar {
+        flex-direction: column;
+    }
+    .header {
+        margin: 30px auto;
+    }
+    .section-heading {
+        font-size: 30px;
+    }
+}
